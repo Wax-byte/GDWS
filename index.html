@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>GDWS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/template.css">
+    </head>
+<body>
+
+    <div class="parallax-content baner-content" id="home">
+        <div class="container">
+            <div class="first-content">
+                <h1>GDWS</h1>
+                <span id="dedroom" ></span>
+                <button type="button" onclick="myFunction()">Wat?</button> 
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            varG = ["Geen", "Grenzeloze", "Gaarne", "Grootse"];
+            varD = ["Dieren", "Doekoe", "Diversiteit", "Druiloren", "Dudes"]
+            varW = ["Wel", "Wellicht", "Wereldse"]
+            varS = ["Spieren", "Spiritueel", "Sarcasme"]
+
+            document.getElementById("dedroom").innerHTML = varG[Math.random()*varG.length | 0] + " " + varD[Math.random()*varD.length | 0] + " " + varW[Math.random()*varW.length | 0] + " " + varS[Math.random()*varS.length | 0];
+
+        }
+    </script>
+
+</body>
+</html>
